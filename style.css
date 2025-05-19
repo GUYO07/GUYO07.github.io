@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: hsl(308, 71%, 84%);
+  }
+
+  body.flash {
+    animation: flash-bg 0.1s alternate infinite;
+  }
+  
+  @keyframes flash-bg {
+    0% {
+      background-color: #fff0f5;
+    }
+    100% {
+      background-color: hsl(308, 71%, 84%);
+    }
+  }
+  
+  .heart-container {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    gap: 1px; /* ระยะห่างระหว่างหัวใจ */
+    margin-top: 70px;
+  }
+  
+  .heart {
+    font-size: 400px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .heart:hover {
+    transform: scale(1.2);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #message {
+    margin-top: 50px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  #hbd-message {
+    font-size: 10rem;
+    color: #ff4081;
+    margin-top: 30px;
+  }
+
+  #hbd-message2 {
+    color: #ff4081;
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
